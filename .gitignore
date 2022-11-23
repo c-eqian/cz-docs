@@ -1,0 +1,23 @@
+# Editor directories and files
+.idea
+
+# Package Manager
+node_modules
+public
+.pnpm-debug.log*
+.vuepress/dist
+.vuepress/.cache**
+.vuepress/.temp**
+.temp
+.cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# Bundle
+dist
+coverage
+packages/cz-coco/version.ts
+
+# local env files
+*.local
