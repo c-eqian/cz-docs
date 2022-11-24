@@ -1,6 +1,7 @@
 module.exports = {
   "title": "cz-文档",
   "description": "",
+  "base": "./",
   "head": [
     [
       "link",
