@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "vuepress": "1.9.7",
+    "vuepress-plugin-serve": "^1.1.0",
     "vuepress-theme-reco": "1.6.16",
     "yarn": "^1.22.19"
   },
