@@ -31,8 +31,8 @@ module.exports = {
         "icon": "reco-message",
         "items": [
           {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
+            "text": "co-utils工具库",
+            "link": "/docs/utils/"
           }
         ]
       },
@@ -54,11 +54,9 @@ module.exports = {
       // }
     ],
     "sidebar": {
-      "/docs/theme-reco/": [
+      "/docs/utils/": [
         "",
-        "theme",
-        "plugin",
-        "api"
+        "co-utils工具库",
       ]
     },
     "type": "blog",
