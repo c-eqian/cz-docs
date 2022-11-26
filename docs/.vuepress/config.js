@@ -46,7 +46,7 @@ module.exports = {
       },
       {
         text: '文档',
-        icon: 'reco-message',
+        icon: 'reco-document',
         items: [
           {
             text: 'co-utils工具库',
