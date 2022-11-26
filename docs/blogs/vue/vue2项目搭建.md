@@ -6,6 +6,7 @@ tags:
 categories:
  -  vue
 ---
+<Boxx/>
 
 ## 1. 初始化项目
 

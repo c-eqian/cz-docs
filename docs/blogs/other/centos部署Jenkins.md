@@ -8,6 +8,8 @@ categories:
  -  其他
 ---
 
+<Boxx/>
+
 ### 1.安装JDK11
 
 ```shell

@@ -6,6 +6,7 @@ tags:
 categories:
  -  SQL
 ---
+<Boxx/>
 
 ## 1. 基础操作
 
@@ -383,7 +384,7 @@ SELECT * FROM fh_self_care_assess WHERE id=(SELECT b.BusinessInnerId FROM (SELEC
 INSERT INTO userinfo (username) SELECT '20616985' FROM DUAL WHERE NOT EXISTS (SELECT username FROM userinfo WHERE username='20616985')
 ```
 
-```
+```mysql
 INSERT INTO user_sys ( userAccount,userId ) SELECT
 a.userId,'2022'
 FROM
