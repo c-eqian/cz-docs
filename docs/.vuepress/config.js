@@ -36,6 +36,17 @@ module.exports = {
   ],
   theme: 'reco',
   themeConfig: {
+    '/cz-docs/': {
+      lang: 'zh-CN',
+      recoLocales: {
+        pagation: {
+          prev: '上一页',
+          next: '下一页',
+          go: '前往',
+          jump: '跳转至'
+        }
+      }
+    },
     codeTheme: 'solarizedlight',
     subSidebar: 'auto',
     nav: [
