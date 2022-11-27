@@ -2,7 +2,8 @@
 home: true
 heroText: 秋谨-随笔
 tagline: 没啥特别，只是热爱
-bgImage: 'https://s3.uuu.ovh/imgs/2022/11/23/84077c18f8e3acfa.jpg'
+bgImage: 'https://s3.uuu.ovh/imgs/2022/11/27/44ecddb9454b34ae.jpg'
+# bgImage: 'https://s3.uuu.ovh/imgs/2022/11/23/84077c18f8e3acfa.jpg'
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
