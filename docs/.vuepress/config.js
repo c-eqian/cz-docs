@@ -85,20 +85,6 @@ module.exports = {
         text: '标签',
       },
     },
-    friendLink: [
-      {
-        title: 'cz-十三',
-        desc: 'Enjoy when you can, and endure when you must.',
-        email: '1156743527@qq.com',
-        link: 'https://www.recoluan.com',
-      },
-      {
-        title: 'vuepress-theme-reco',
-        desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-        avatar: 'https://s3.uuu.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg',
-        link: 'https://vuepress-theme-reco.recoluan.com',
-      },
-    ],
     logo: 'https://s3.uuu.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg',
     search: true,
     searchMaxSuggestions: 10,

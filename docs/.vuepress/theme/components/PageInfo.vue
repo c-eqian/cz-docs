@@ -10,7 +10,8 @@
       v-if="pageInfo.frontmatter.date"
       icon="reco-date"
     >
-      <span>{{ formatDateValue(pageInfo.frontmatter.date) }}</span>
+    <span>{{ beforeDate(pageInfo.frontmatter.date) }}</span>
+      <!-- <span>{{ formatDateValue(pageInfo.frontmatter.date) }}</span> -->
     </reco-icon>
     <reco-icon
       v-if="showAccessNumber === true"
@@ -38,7 +39,7 @@
 import { defineComponent } from 'vue'
 import { RecoIcon } from '@vuepress-reco/core/lib/components'
 import { useInstance } from '@theme/helpers/composable'
-
+import { beforeDate } from 'co-utils';
 export default defineComponent({
   components: { RecoIcon },
   props: {
@@ -77,7 +78,7 @@ export default defineComponent({
       return new Intl.DateTimeFormat(instance.$lang).format(new Date(value))
     }
 
-    return { numStyle, goTags, formatDateValue }
+    return { numStyle, goTags, formatDateValue, beforeDate }
   }
 })
 </script>
