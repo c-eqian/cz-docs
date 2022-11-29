@@ -2,7 +2,8 @@
   <Common class="timeline-wrapper" :sidebar="false">
     <ul class="timeline-content">
       <ModuleTransition >
-        <li v-show="recoShowModule" class="desc">{{$recoLocales.timeLineMsg}}</li>
+        <li v-show="recoShowModule" class="desc">时间线</li>
+        <!-- <li v-show="recoShowModule" class="desc">{{$recoLocales.timeLineMsg}}</li> -->
       </ModuleTransition>
       <ModuleTransition
         :delay="String(0.08 * (index + 1))"
@@ -108,13 +109,25 @@ export default defineComponent({
     }
     .year-wrapper {
       padding-left 0!important
-      li {
-        display flex
-        padding 30px 0 10px
+      li {     
+      padding: 10px 20px!important;
+      // border-bottom: 2px solid rgba(153,157,160,.42)!important;
+      // background: rgba(193,193,230,.149);
+      border-radius: 5rem;
+      margin: 5px 0;
+      transition: all .5s; 
+      background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;       
+        box-shadow: 0 0 20px #eee;
         list-style none
-        border-bottom: 1px dashed var(--border-color);
         position relative
         &:hover {
+          background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          transform: translate(50px, 0)
           .date {
             color $accentColor
             &::before {
@@ -125,6 +138,7 @@ export default defineComponent({
             color $accentColor
           }
         }
+        
         .date {
           width 40px
           line-height 30px
@@ -134,7 +148,7 @@ export default defineComponent({
             content: " ";
             position: absolute;
             left: -18px;
-            top: 41px;
+            top: 50%;
             width: 6px;
             height: 6px;
             margin-left: -4px;
