@@ -98,6 +98,10 @@ module.exports = {
     lineNumbers: true,
   },
   plugins: [
+    ['vuepress-plugin-code-copy', {
+      align: 'top',
+      successText: '已复制'
+      }],
     //   ["sakura", {
     //     num: 20,  // 默认数量
     //     show: true, //  是否显示
