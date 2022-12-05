@@ -164,3 +164,58 @@ const arr = [{ parent: null, id: 1, name: '北京' },
 
 **如果你的数据，没有像上面数据的`id`字段，此时，你需要传入`pid`参数设置成你的标识字段，同样的，如果你绑定的父节点字段不是`parent`，那么此时，你需要传入`parent`字段设置你的父节点字段**
 
+## 组件开发规范
+
+- `useNamespace`命名空间，使用默认为`cz`的前缀
+
+```javascript
+const ns = useNamespace('button')
+ns.b() // cz-button
+ns.b('overlay') // cz-button-overlay
+ns.e('header') // cz-button__header
+ns.m('theme-dark') // cz-button--theme-dark
+ns.be('header','close') // cz-button-header__close
+ns.em('footer','small') // cz-button__footer--small
+ns.bm('footer','small') // cz-button-footer--small
+ns.bem('footer','btn','primary') // cz-button-footer__btn--primary
+ns.is('closeable') // is-closeable
+```
+
+- `useComponentNameFormat`组件名转换短杠拼接
+
+```javascript
+comst nf = useComponentNameFormat('CzButton ') // cz-button
+```
+
+- `setGlobalZIndex`设置全局 `z-index`，`getNextGlobalZIndex`全局` z-index` 自动自增，默认值2000，两者搭配使用,
+
+```javascript
+setGlobalZIndex(0) 
+getNextGlobalZIndex() // 1
+getNextGlobalZIndex() // 2
+getNextGlobalZIndex() // 3
+```
+
+- `getNextGlobalId`全局 `z-index `自动自增`Id`，默认值为1
+
+```javascript
+getNextGlobalId() // 2
+getNextGlobalId() // 3
+getNextGlobalId() // 4
+```
+
+- `camelize`短杆拼接转小驼峰命名
+
+```javascript
+camelize('test-icon') // testIcon
+```
+
+- `firstLetterToUpperCase`首字母转大写
+
+- `useCreateComponentName`创建组件名称，使用`cz`作为前缀
+
+```javascript
+useCreateComponentName('icon') // CzIcon
+```
+
+- `useSFCWithInstall`进行组件注册，接受一个组件作为参数， `useSFCWithInstallFunction`，全局注册组件方法，接收两个参数，`fn`需要注册的方法，`name`需要注册的方法名称
