@@ -8,3 +8,16 @@ tags:
   - pinia
   - vue3
 ---
+
+# 安装
+
+```javascript
+npm install pinia -S
+```
+
+# 持久化安装
+
+```
+npm install pinia-plugin-persist -S
+```
+
