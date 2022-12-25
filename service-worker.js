@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "9fca656b6f0353de961d79e78c1c9647"
+    "revision": "295140a79d7d7bfd1b0d0e92633846f8"
   },
   {
     "url": "assets/css/0.styles.5d73045c.css",
@@ -90,20 +90,20 @@ self.__precacheManifest = [
     "revision": "9ca43fe9cfe030961d168a34e66585ba"
   },
   {
-    "url": "assets/js/18.011840a4.js",
-    "revision": "5ba1bbd82cd7850967845d3f5adaf4bc"
+    "url": "assets/js/18.d44c31ec.js",
+    "revision": "5c06fe6a90beb0b1eebc0e8bb512a881"
   },
   {
     "url": "assets/js/19.b11924f2.js",
     "revision": "d373311048a7d4cd26667c113f60ec11"
   },
   {
-    "url": "assets/js/2.580ab6d6.js",
-    "revision": "517f33fe07c8b4c402ff9728d5689046"
+    "url": "assets/js/2.d35d5263.js",
+    "revision": "ac41d9ca69f1766f81e849371937894d"
   },
   {
-    "url": "assets/js/20.26a878de.js",
-    "revision": "70993374eada0651534155e04789f4e3"
+    "url": "assets/js/20.f208096e.js",
+    "revision": "546e0a67170b23635cccf4ce99e7cd50"
   },
   {
     "url": "assets/js/21.089c64fe.js",
@@ -114,8 +114,8 @@ self.__precacheManifest = [
     "revision": "1ac2b6fc57effc4059e67e855f6f4532"
   },
   {
-    "url": "assets/js/23.d30bf129.js",
-    "revision": "72b45af710cc0701ac79f90f59e2396a"
+    "url": "assets/js/23.610d904e.js",
+    "revision": "1eebb652e928251bbb0d216b09b51497"
   },
   {
     "url": "assets/js/24.037f9e63.js",
@@ -146,128 +146,124 @@ self.__precacheManifest = [
     "revision": "ed105be458ce4fbb2993139b2fdd0839"
   },
   {
-    "url": "assets/js/app.dcd7e598.js",
-    "revision": "50e1fadab63aa136107cde4d81a1cf88"
+    "url": "assets/js/app.e9608ba5.js",
+    "revision": "c936b141072d7f96e8d69970650b9d83"
   },
   {
     "url": "blogs/JavaScript/前端知识点.html",
-    "revision": "b64b8a239d7ecf6559cb19571dbbd785"
+    "revision": "d835ce690dd597cdd41a4c94793c3ec5"
   },
   {
     "url": "blogs/JavaScript/手写深拷贝.html",
-    "revision": "e75447fc740a665e580e2c3eeaf1f4f6"
+    "revision": "8222c997513f03a561e8422d624b2595"
   },
   {
     "url": "blogs/JavaScript/数据结构.html",
-    "revision": "b4c23e743053b9095a491e6497bcfb8c"
+    "revision": "034cba8d14a292a95da7329786315267"
   },
   {
     "url": "blogs/other/centos部署Jenkins.html",
-    "revision": "db329ce5e93a6e5ef1776d8b194a2700"
+    "revision": "17eb6d35172967dc2f963baf9c50d1c1"
   },
   {
     "url": "blogs/other/Giteen代码与服务器同步更新.html",
-    "revision": "c4703bbfb0c748282f7c12d8fec8e04d"
+    "revision": "877443190c161b08d4005974ea3db477"
   },
   {
     "url": "blogs/other/guide.html",
-    "revision": "1aff3bb545d933321d8e15863cb5b7d9"
+    "revision": "2664fd920223cbd3f7efe1d8f3a52e06"
   },
   {
     "url": "blogs/SQL/mysql.html",
-    "revision": "b28caab998b57b9c2105e404aa9943e8"
+    "revision": "3b5210ba07ab7c518df02262a9dde09f"
   },
   {
     "url": "blogs/vue/pinia基本使用方法.html",
-    "revision": "4db799f2595cf76d412b3f48287408e5"
+    "revision": "4ed2ef33e7faf6ec12e7baaea10d349a"
   },
   {
     "url": "blogs/vue/vue2项目搭建.html",
-    "revision": "3734491064490dc741e09b298dc60495"
+    "revision": "5c151f7e7f5a16e1112e96445f92caeb"
   },
   {
     "url": "categories/index.html",
-    "revision": "98ee6a0cad29ea0f67359c6ad6116944"
+    "revision": "65f76148cd077773a08d89e620b56ee0"
   },
   {
     "url": "categories/JavaScript/index.html",
-    "revision": "040a2788a8c2210d03076e44ccfe7495"
+    "revision": "664eec0f6ee2fd7b9c99cd585078a7ac"
   },
   {
     "url": "categories/SQL/index.html",
-    "revision": "56ff620909714bbdd3df39150815a081"
+    "revision": "a5497f2b9d20c246769b3d903514e5cd"
   },
   {
     "url": "categories/vue/index.html",
-    "revision": "34a747aa4025189fcad31fb22b16b2f1"
+    "revision": "83193906c8195cbb94adb3bdd5856a92"
   },
   {
     "url": "categories/其他/index.html",
-    "revision": "e91be061f9d93a238585714329777022"
+    "revision": "7fdb383a4fa636197c68582216130278"
   },
   {
     "url": "docs/utils/co-utils工具库.html",
-    "revision": "348d05f296d4fb0d6a7e7cd7cb908cbe"
+    "revision": "63d5dadc8dfd5e48eae96fd5bfdb6bff"
   },
   {
     "url": "docs/utils/index.html",
-    "revision": "f552ed5500172481d9164db289b05440"
+    "revision": "2a3acf3952e4742f939a13f0c488b6d3"
   },
   {
     "url": "index.html",
-    "revision": "06a0f53dd5f4cee5b2379dde27bc0f44"
+    "revision": "717b7384c6e36212fcd452449eab9f3a"
   },
   {
     "url": "tag/centos/index.html",
-    "revision": "664d8b891cff3c384b7ad1e52d0fe79c"
+    "revision": "880b16c0ea73f6e2b070cb1bd7a91711"
   },
   {
     "url": "tag/git/index.html",
-    "revision": "adc4ab37b5042d75bbecf7e1119b3181"
+    "revision": "7d23003a209270c4ef617577b9ae7053"
   },
   {
     "url": "tag/index.html",
-    "revision": "0a7fd3defb1e9fc5d9df3b10ba332d43"
+    "revision": "68c7a4ceaac1b44fed30467ba7a4f453"
   },
   {
     "url": "tag/JavaScript/index.html",
-    "revision": "f131e6ca8b3d6906bbc3dcec163399f2"
-  },
-  {
-    "url": "tag/jenkins/index.html",
-    "revision": "ff3d6eb79ad11c318d7ecdc1c35c573b"
+    "revision": "7feeed1436b3d4876b6ff6df07fcdb49"
   },
   {
     "url": "tag/MySQL/index.html",
-    "revision": "65f7bbbecdd8855359b74a8033c275c4"
+    "revision": "1a5322f8352ce98e367d9c0fd79e0b04"
   },
   {
     "url": "tag/pinia/index.html",
-    "revision": "e5ed09a7aa428a28fd4fdfe2ecfd3804"
+    "revision": "50e3e77a32da230e55a9f692c62c83fe"
   },
   {
     "url": "tag/vue/index.html",
-    "revision": "7b822fcdfd5dc99e513cab0e9c6312b1"
+    "revision": "1cc3219d4101bba39ac51d97dc2f2e17"
   },
   {
     "url": "tag/vue2/index.html",
-    "revision": "2d03e4d76bcdf754e268154b6068247d"
+    "revision": "2f67720d2e57336b5954c098ee283cc8"
   },
   {
     "url": "tag/vue3/index.html",
-    "revision": "5893d2739026e6f7e4ff90c626a68c6e"
+    "revision": "e134dc4e23defe55e2eb6d7723c77fee"
   },
   {
     "url": "tag/数据结构/index.html",
-    "revision": "24797f5f9b0ff3fe2d7df5b6b50c875c"
+    "revision": "849ed7d2f9316f5dd643716b5577be19"
   },
   {
     "url": "tag/面试题/index.html",
-    "revision": "95c14b2bb60a5e94964b7eb9207f4846"
+    "revision": "027930e4469c24fc95d99612e13bc855"
   },
   {
     "url": "timeline/index.html",
-    "revision": "edee6b430e6daff58a811ebd4bb3b349"
+    "revision": "ba7a912208bfa008a1fe8d749eb2303d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
