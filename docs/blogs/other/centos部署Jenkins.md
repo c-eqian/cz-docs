@@ -1,22 +1,11 @@
-<!--
- * @Descripttion:
- * @version:
- * @Author: 十三
- * @Date: 2022-11-26 14:25:19
- * @LastEditors: 十三
- * @LastEditTime: 2022-12-25 14:01:01
--->
-
 ---
-
 title: centos jenkins
 date: 2022-11-23
 tags:
-
-- centos
-- jenkins
-  categories:
-- 其他
+  - centos
+  - jenkins
+categories:
+  - 其他
 
 ---
 
