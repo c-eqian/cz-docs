@@ -150,9 +150,19 @@ console.log(toFixedFix("45588.28, 3")) // 45588.28
 
 ## 数据
 
-### arr2Tree
+### arrToTree
 
-`arr2Tree`数组数据转树形结构，`arr2Tree`具有三个参数，`arrData`是必须的数组数据，`parent`是可选的绑定父节点字段，默认为`parent`，`pid` 默认是可选的每组数据的唯一标识字段,默认值为`id`（这两个字段是可以自定义的）
+`arrToTree`数组数据转树形结构，`arrToTree`具有两个参数，`arrData`是必须的数组数据，`options`参数是可选项，`parent`是可选的绑定父节点字段，默认为`parent`，`key` 默认是可选的每组数据的唯一标识字段,默认值为`id`（这两个字段是可以自定义的）,`pid`字段是作为父节点时的值，默认为`null`
+
+**`options`参数**
+
+```javascript
+{
+  parent: string;
+  key: string;
+  pid: string | number | null;
+}
+```
 
 **如果你的数据，没有像上面数据的`id`字段，此时，你需要传入`pid`参数设置成你的标识字段，同样的，如果你绑定的父节点字段不是`parent`，那么此时，你需要传入`parent`字段设置你的父节点字段**
 
@@ -235,7 +245,15 @@ const arr = [{ parent: null, id: 1, name: '北京' },
 ]
 ```
 
+### treeToArr
 
+`treeToArr`树形结构数据进行扁平化，其中在每一组数据中，应该包含`children`字段，如果不是该字段，那么此时应该传入**可选参数**`options`进行替换
+
+```javascript
+{
+  children?: string;
+}
+```
 
 ## 组件
 
@@ -353,11 +371,137 @@ console.log(isIdCard('45060319990886273529')) // false
 
 ```javascript
 console.log(getTag("1999-12-25")) // [object String]
-test-bb.vue:48 console.log(getTag(78888)) // [object Number]
-test-bb.vue:49 console.log(getTag({})) //  [object Object]
-test-bb.vue:49 console.log(getTag([])) //  [object Array]
-test-bb.vue:51 console.log(getTag(null)) //  [object Null]
-test-bb.vue:52 console.log(getTag(undefined)) //  [object Undefined]
-test-bb.vue:53 console.log(getTag(Object)) //  [object Function]
+console.log(getTag(78888)) // [object Number]
+console.log(getTag({})) //  [object Object]
+console.log(getTag([])) //  [object Array]
+console.log(getTag(null)) //  [object Null]
+console.log(getTag(undefined)) //  [object Undefined]
+console.log(getTag(Object)) //  [object Function]
+```
+
+### Omit
+
+`Omit`剔除某些属性，然后返回一个新类型
+
+```typescript
+interface ITest {
+  name: string;
+  age: number;
+  sex: string;
+}
+type TTest = Omit<ITest, 'age' | 'sex'>;
+// 相当于
+interface ITest1 {
+  name: string;
+}
+```
+
+### Pick
+
+`Pick`选取指定一组属性，返回一个新的类型定义
+
+```typescript
+interface ITest {
+  name: string;
+  age: number;
+  sex: string;
+}
+type TTest = Pick<ITest, 'age' | 'sex'>;
+
+// 相当于
+interface ITest1 {
+  age: number;
+  sex: string;
+}
+```
+
+### Partial
+
+`Partial`将类型中所有选项变为可选
+
+```typescript
+interface ITest {
+  name: string;
+  age: number;
+  sex: string;
+}
+type TTest = Partial<ITest>;
+
+// 相当于
+interface ITest1 {
+  name?: string;
+  age?: number;
+  sex?: string;
+}
+```
+
+### Required
+
+`Required`将类型中所有选项变为必选
+
+```typescript
+interface ITest {
+  name?: string;
+  age?: number;
+  sex?: string;
+}
+type TTest = Required<ITest>;
+
+// 相当于
+interface ITest1 {
+  name: string;
+  age: number;
+  sex: string;
+}
+```
+
+### Record
+
+`Record`将 `K` 中的所有属性值都转换为 `T` 类型，并返回新的对象类型
+
+```typescript
+type ITest = 'name' | 'age' | 'address' | 'phone' | 'email' | 'id'
+
+interface ITestModel {
+  test: string;
+  other: string;
+}
+type TTest = Record<ITest, ITestModel>;
+
+// 相当于
+interface ITest1 {
+  name: ITestModel;
+  age: ITestModel;
+  address: ITestModel;
+  phone: ITestModel;
+  email: ITestModel;
+  id: ITestModel;
+}
+```
+
+### Extract
+
+`Extract`提取`T`中可以赋值给`U`的类型
+
+```typescript
+type ITestModel =  'name' | 'age' | 'address' | 'phone' | 'email' ;
+
+type TTest = Extract<ITestModel, 'name' | 'phone'>;
+
+// 相当于
+type TTest = "name" | "phone"
+```
+
+### Exclude
+
+`Exclude`从`T`中剔除可以赋值给`U`的类型
+
+```typescript
+type ITestModel =  'name' | 'age' | 'address' | 'phone' | 'email' ;
+
+type TTest = Exclude<ITestModel, 'name' | 'phone'>;
+
+// 相当于
+type TTest1 = "age" | "address" | "email"
 ```
 
