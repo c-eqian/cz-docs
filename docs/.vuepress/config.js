@@ -78,19 +78,19 @@ module.exports = {
     blogConfig: {
       category: {
         location: 3,
-        text: '笔记&博客',
+        text: '笔记',
       },
       tag: {
         location: 3,
         text: '标签',
       },
     },
-    logo: 'https://s3.uuu.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg',
+    logo: 'https://s3.bmp.ovh/imgs/2022/12/21/0aedf538ece60a2f.png',
     search: true,
     searchMaxSuggestions: 10,
     lastUpdated: '更新时间',
     author: '秋谨',
-    authorAvatar: 'https://s3.uuu.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg',
+    authorAvatar: 'https://s3.bmp.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg',
     record: 'cz',
     startYear: '2022',
   },
