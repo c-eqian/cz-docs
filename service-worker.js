@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "60adb2ea0d37f287ca4d1e32146b0d93"
+    "revision": "bf3357b08e69ac568ed05ef1e808e526"
   },
   {
     "url": "assets/css/0.styles.5d73045c.css",
@@ -98,8 +98,8 @@ self.__precacheManifest = [
     "revision": "aeb2aab1599c3bc4e8ccb24a89c43962"
   },
   {
-    "url": "assets/js/2.51d1bd78.js",
-    "revision": "4fbf8d06b3fa34bc2f2de10251937b0d"
+    "url": "assets/js/2.fb9d50dc.js",
+    "revision": "c06ffa2edde8df6949bea0dbb5fa8142"
   },
   {
     "url": "assets/js/20.9b8a4de5.js",
@@ -166,168 +166,168 @@ self.__precacheManifest = [
     "revision": "f862d8f38b36db449ad2e7e3e099e58e"
   },
   {
-    "url": "assets/js/app.be5f1d42.js",
-    "revision": "1f1c72a85bdb4b6200510a76250c8a4d"
+    "url": "assets/js/app.74a73220.js",
+    "revision": "2790b7ae0eb7dc0a3190a0401b3be81b"
   },
   {
     "url": "blogs/JavaScript/前端知识点.html",
-    "revision": "48e7c988f15ee2988c9854f45560b624"
+    "revision": "12f0e7013e5b28aabce64778aaf5834d"
   },
   {
     "url": "blogs/JavaScript/手写深拷贝.html",
-    "revision": "76e5f51429b9d57783259642145c6211"
+    "revision": "0efa6078149304e5b4b97fbba4984744"
   },
   {
     "url": "blogs/JavaScript/数据结构.html",
-    "revision": "185aaa836f9ea38c9c7a3805001c6fa8"
+    "revision": "50a1d1bfcca53cf7246645aade94936e"
   },
   {
     "url": "blogs/other/centos部署Jenkins.html",
-    "revision": "a4c47b606127e388d71b3f3239c7a467"
+    "revision": "e7040cacaf6ab267376dca32b2e0771f"
   },
   {
     "url": "blogs/other/cmder.html",
-    "revision": "da73d0eb7058def224c6ef6ad460db1a"
+    "revision": "8c64e5df41e1d25cc0083a6ce5a124bb"
   },
   {
     "url": "blogs/other/Giteen代码与服务器同步更新.html",
-    "revision": "3e0ab67783bf9087da9e7abbfc9c9e7c"
+    "revision": "0b0f2868b8475ebd8bb6fbb5c67647f4"
   },
   {
     "url": "blogs/other/git常用.html",
-    "revision": "499e44b5d012261705fb45eb3f569ded"
+    "revision": "13656766dbd0c352acd139b016026034"
   },
   {
     "url": "blogs/other/git配置SSH.html",
-    "revision": "660938bd0a53fd2785f83b491dd52809"
+    "revision": "403aea4e98aa73364e217938332ccfc3"
   },
   {
     "url": "blogs/other/nvm版本管理.html",
-    "revision": "f5e312d02cf1ed610f3001bfceeea3e2"
+    "revision": "05ed6b8f8226d8b3a04fa517fe1b009d"
   },
   {
     "url": "blogs/other/vite配置.html",
-    "revision": "13f00a8194d475924ca28b4881baadac"
+    "revision": "64e7ccaa610c42b1b297ef21b928c114"
   },
   {
     "url": "blogs/SQL/mysql.html",
-    "revision": "ac3151b6e42ad522af0c41f9f99bffdb"
+    "revision": "f4dac20fb594f7340f53be623eca1fcf"
   },
   {
     "url": "blogs/vue/pinia基本使用方法.html",
-    "revision": "cb89eac0415ccc43cba5f77e4011f757"
+    "revision": "52fef5e9b98451acde87adbf4fd4a6b9"
   },
   {
     "url": "blogs/vue/vue2项目搭建.html",
-    "revision": "34c41283629366ac08603e6102f671e9"
+    "revision": "e2de6be17b2a5d9c2d501ebc51c182f6"
   },
   {
     "url": "categories/index.html",
-    "revision": "85d34467acf716e125454fc8cda94051"
+    "revision": "4c240e8c9441e3f5acc8cb674ce8dee9"
   },
   {
     "url": "categories/JavaScript/index.html",
-    "revision": "f4c1ca5909007cb394dec166924b3778"
+    "revision": "df39bdd387806bf4ab0f0011e1548830"
   },
   {
     "url": "categories/SQL/index.html",
-    "revision": "62e986be55c33035aacc43a081549178"
+    "revision": "2b65e42f3875085b12240ed857614057"
   },
   {
     "url": "categories/vue/index.html",
-    "revision": "ec9d1f2d2b1c8c00a49f486a13a03bb1"
+    "revision": "61392550b59672501e966adb3ec6044c"
   },
   {
     "url": "categories/其他/index.html",
-    "revision": "4be4b213e09cfab007786cb8d334d3e3"
+    "revision": "8112505572d46b512ff1166d3458c4bf"
   },
   {
     "url": "docs/utils/co-utils工具库.html",
-    "revision": "e4205a4af6c31f7e74845d032256804c"
+    "revision": "a5acd376698399b293957b3f31e2a8a5"
   },
   {
     "url": "docs/utils/co-utils工具库v2.html",
-    "revision": "0638637445eb46b2c9db601f9cff4cd3"
+    "revision": "9347207d91f389cd2c5922ca3480e4e2"
   },
   {
     "url": "docs/utils/index.html",
-    "revision": "83bd1e04d13020fc68d803741e2fc689"
+    "revision": "600ddc3e5367d654f0d624f09d96e10a"
   },
   {
     "url": "index.html",
-    "revision": "7a3c02e3f29d8d53241ad3d89e170333"
+    "revision": "57a28eb98f13a4f0757353d58456acbf"
   },
   {
     "url": "tag/centos/index.html",
-    "revision": "35ae1d7d379ebdd666a389f757ba18d9"
+    "revision": "ccfecc2c993d03a44660dc88f5d28732"
   },
   {
     "url": "tag/cmder/index.html",
-    "revision": "866416188a73616bc4974f1c4bd16ac9"
+    "revision": "96b016b68ec95b3bfc8a1f29deb2f257"
   },
   {
     "url": "tag/git/index.html",
-    "revision": "7570ef69e3016707d379e0a999d9d44a"
+    "revision": "8bfc2cd600d64c3711002d26db6be694"
   },
   {
     "url": "tag/index.html",
-    "revision": "cd7bf359543f343dfc92294b6f105470"
+    "revision": "841bafc4c493b532d28a452dbf0a676b"
   },
   {
     "url": "tag/JavaScript/index.html",
-    "revision": "8f628e6d7378f8636d3f8f19abb55d69"
+    "revision": "bc5a26499ec479d969f51426ac86ab8b"
   },
   {
     "url": "tag/jenkins/index.html",
-    "revision": "dc929357e6e0b8af6262b4442c1003ca"
+    "revision": "d18cad2f26f94bd54877e5d8aa684c52"
   },
   {
     "url": "tag/MySQL/index.html",
-    "revision": "a14095a480684395d34a8a8fe02f1255"
+    "revision": "5e532eefeb793643004f852d556bd6b2"
   },
   {
     "url": "tag/npm/index.html",
-    "revision": "45b72c22e367839e8f3578db17eebba2"
+    "revision": "30bf15b8feea8ff62ff8986876660efe"
   },
   {
     "url": "tag/nvm/index.html",
-    "revision": "24e84d1cfdd031b4bfe136cd9fea1918"
+    "revision": "fe65674515bb655ae1ddcfcd6f580750"
   },
   {
     "url": "tag/pinia/index.html",
-    "revision": "6f198df2a1b0877c225ace5f2590306f"
+    "revision": "e18523d80af44765f5f5753f99fedf9a"
   },
   {
     "url": "tag/SSH/index.html",
-    "revision": "8b45f8ae773b683085986c46e805d570"
+    "revision": "95f556e762eed237acad451b53c4d218"
   },
   {
     "url": "tag/vite/index.html",
-    "revision": "27545a1ccd50c415eddcc58f9e10ab1f"
+    "revision": "2878d2b53dbd64b4324de3fc3ee1bdd7"
   },
   {
     "url": "tag/vue/index.html",
-    "revision": "66bc91a8eebce3a00083f2f3e3e301cc"
+    "revision": "6379eaa10adc8ff8cd4688b9b75da07b"
   },
   {
     "url": "tag/vue2/index.html",
-    "revision": "fae1eddf484883ad8a038f9d49676426"
+    "revision": "8a51af0143c3f23983edca7acb38107d"
   },
   {
     "url": "tag/vue3/index.html",
-    "revision": "67a9d95c856bf14b13cff3a7e9706a0d"
+    "revision": "b14a3495d59e05c59e09490bea444a19"
   },
   {
     "url": "tag/数据结构/index.html",
-    "revision": "bcb88bad3c3dbc2194875fa528fcfd89"
+    "revision": "548501c386c513225f334f1623f5ca14"
   },
   {
     "url": "tag/面试题/index.html",
-    "revision": "44ccff9b0d3992fdb8398373b9071605"
+    "revision": "85747b736b3fede2f5e26ff7585be262"
   },
   {
     "url": "timeline/index.html",
-    "revision": "1b33bbb621ab61e3a2c9a21b1524764d"
+    "revision": "2b32abc3ef38a1c38acce08bc6548db0"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
