@@ -72,7 +72,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      '/docs/utils/': ['', 'co-utils工具库'],
+      '/docs/utils/': ['co-utils工具库', 'co-utils工具库v2'],
     },
     type: 'blog',
     blogConfig: {
