@@ -2,6 +2,11 @@ module.exports = {
   title: '秋谨~',
   description: '',
   base: '/cz-docs/',
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
   head: [
     [
       'link',
@@ -36,14 +41,21 @@ module.exports = {
   ],
   theme: 'reco',
   themeConfig: {
-    '/cz-docs/': {
-      lang: 'zh-CN',
-      recoLocales: {
-        pagation: {
-          prev: '上一页',
-          next: '下一页',
-          go: '前往',
-          jump: '跳转至'
+    locales: {
+      '/': {
+        recoLocales: {
+          homeBlog: {
+            article: '美文', // 默认 文章
+            tag: '标识', // 默认 标签
+            category: '类别', // 默认 分类
+            friendLink: '友链' // 默认 友情链接
+          },
+          pagation: {
+            prev: '上一页',
+            next: '下一页',
+            go: '前往',
+            jump: '跳转至'
+          }
         }
       }
     },

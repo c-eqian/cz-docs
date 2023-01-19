@@ -2,7 +2,7 @@
 
 home: true
 heroText: 秋谨
-tagline: 没啥特别，只是热爱
+tagline: 在黑暗中看到了微光，朝着光明去前行
 bgImage: 'https://s3.bmp.ovh/imgs/2022/11/27/44ecddb9454b34ae.jpg'
 
 # bgImage: 'https://s3.uuu.ovh/imgs/2022/11/23/84077c18f8e3acfa.jpg'
