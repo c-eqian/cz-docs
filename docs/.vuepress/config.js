@@ -2,6 +2,11 @@ module.exports = {
   title: '秋谨~',
   description: '',
   base: '/cz-docs/',
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
   head: [
     [
       'link',
@@ -36,14 +41,21 @@ module.exports = {
   ],
   theme: 'reco',
   themeConfig: {
-    '/cz-docs/': {
-      lang: 'zh-CN',
-      recoLocales: {
-        pagation: {
-          prev: '上一页',
-          next: '下一页',
-          go: '前往',
-          jump: '跳转至'
+    locales: {
+      '/': {
+        recoLocales: {
+          homeBlog: {
+            article: '美文', // 默认 文章
+            tag: '标识', // 默认 标签
+            category: '类别', // 默认 分类
+            friendLink: '友链' // 默认 友情链接
+          },
+          pagation: {
+            prev: '上一页',
+            next: '下一页',
+            go: '前往',
+            jump: '跳转至'
+          }
         }
       }
     },
@@ -72,25 +84,25 @@ module.exports = {
       },
     ],
     sidebar: {
-      '/docs/utils/': ['', 'co-utils工具库'],
+      '/docs/utils/': ['co-utils工具库', 'co-utils工具库v2'],
     },
     type: 'blog',
     blogConfig: {
       category: {
         location: 3,
-        text: '笔记&博客',
+        text: '笔记',
       },
       tag: {
         location: 3,
         text: '标签',
       },
     },
-    logo: 'https://s3.uuu.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg',
+    logo: 'https://s3.bmp.ovh/imgs/2022/12/21/0aedf538ece60a2f.png',
     search: true,
     searchMaxSuggestions: 10,
     lastUpdated: '更新时间',
     author: '秋谨',
-    authorAvatar: 'https://s3.uuu.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg',
+    authorAvatar: 'https://s3.bmp.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg',
     record: 'cz',
     startYear: '2022',
   },
