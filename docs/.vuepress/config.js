@@ -75,6 +75,10 @@ module.exports = {
             text: 'co-utils工具库',
             link: '/docs/utils/',
           },
+          {
+            text: 'co-utils最新版本',
+            link: 'https://c1320.github.io/co-utils',
+          },
         ],
       },
       {
