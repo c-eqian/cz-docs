@@ -41,19 +41,11 @@ npx install-peerdeps --dev eslint-config-airbnb
 
 ```json
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true
-  },
-  extends: [
-    'plugin:react/recommended',
-    'plugin:import/recommended',
-    'prettier',
-    'airbnb',
-    'plugin:import/recommended',
-    'plugin:import/typescript'
-  ],
-  parser: '@typescript-eslint/parser',
+  root: true,
+  extends: ['airbnb', 'plugin:import/recommended',
+    'plugin:import/typescript'],
+  parser: '@typescript-eslint/parser', // ESLint 默认使用 esprima 作为其解析器，也可以在配置文件中指定一个不同的解析器（它必须是一个 Node 模块，且它必须符合 parser interface）
+  plugins: ['react', 'react-hooks', 'import', 'jsx-a11y', 'simple-import-sort'],
   parserOptions: {
     parser: '@typescript-eslint/parser',
     ecmaVersion: 12,
@@ -68,45 +60,145 @@ module.exports = {
       extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.css'],
-        moduleDirectory: ['node_modules', 'src/']
-      },
       alias: {
         map: [['@', './src']],
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      },
+      node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.css']
       },
       typescript: {
+        // always try to resolve types under `<root>@types`
+        // directory even it doesn't contain any source code, like `@types/unist`
         alwaysTryTypes: true,
+
+        // Choose from one of the "project" configs
+        // below or omit to use <root>/tsconfig.json by default
+
+        // use <root>/path/to/folder/tsconfig.json
         project: '@'
       }
     }
   },
-  plugins: ['react', 'prettier', '@typescript-eslint'],
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto'
-      }
-    ],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
+    'react/function-component-definition': [2, { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }],
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'no-undef': 'off',
+    'sort-imports': 'off',
+    'import/order': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-unresolved': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    indent: ['error', 2, { SwitchCase: 1 }],
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
+    'dot-notation': 'off',
+    'spaced-comment': 'off',
+    'space-before-function-paren': ['error', 'never'],
+    'one-var': 'off',
+    'one-var-declaration-per-line': 'off',
+    'no-use-before-define': 'off',
+    'no-restricted-globals': ['error', 'history'],
+    'class-methods-use-this': 'off',
+    radix: 'off',
+    'global-require': 'error',
+    'default-case': 'off',
+    'no-param-reassign': 'error',
+    'consistent-return': 'off',
+    'no-script-url': 'error',
+    'no-else-return': 'error',
+    'no-restricted-syntax': 'error',
+    'no-extend-native': 'error',
+    'no-return-assign': 'off',
+    'no-unused-expressions': ['error', {
+      allowShortCircuit: true,
+      allowTernary: true,
+      allowTaggedTemplates: true
+    }],
+    'max-len': ['error', {
+      code: 200,
+      ignoreComments: true,
+      ignoreUrls: true,
+      ignoreTemplateLiterals: true
+    }],
+    'jsx-quotes': ['error', 'prefer-single'],
+    'jsx-a11y/alt-text': 'off',
+    'jsx-a11y/no-autofocus': 'off',
+    'jsx-a11y/label-has-for': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'jsx-a11y/media-has-caption': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'prefer-destructuring': 'off',
+    'react/prop-types': 'off',
+    'react/jsx-tag-spacing': 'off',
+    'import/no-dynamic-require': 'off',
+    'react/no-did-update-set-state': 'error',
+    'react/no-unused-state': 'error',
+    'react/no-find-dom-node': 'error',
+    'react/forbid-prop-types': 'off',
+    'react/jsx-indent-props': 'off',
+    'react/no-array-index-key': 'off',
+    'react/require-default-props': 'off',
+    'react/sort-comp': 'off',
+    'react/jsx-wrap-multilines': 'off',
+    'react/destructuring-assignment': 'off',
+    'react/jsx-closing-bracket-location': 'off',
+    'react/jsx-first-prop-new-line': 'off',
+    'react/no-multi-comp': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'react/no-access-state-in-setstate': 'off',
+    'react/jsx-no-bind': 'off',
+    'react/jsx-indent': [2, 2],
+    'react/no-unescaped-entities': 'off',
+    'no-prototype-builtins': 'error',
+    'no-nested-ternary': 'error',
+    'react-hooks/exhaustive-deps': 'off',
+    'react/jsx-no-target-blank': 'error',
+    'react/jsx-props-no-spreading': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'no-useless-constructor': 'off',
+    'no-empty-function': 'off',
+    'react/no-danger': 'off',
+    'react/button-has-type': 'off',
+    'no-multiple-empty-lines': 'off',
+    'no-useless-escape': 'off',
+    'react/no-unused-prop-types': 'off',
+    'react/default-props-match-prop-types': 'off',
+    'no-shadow': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'import/no-cycle': 'off',
+    'no-underscore-dangle': 'off',
+    'prefer-object-spread': 'off',
+    'arrow-parens': [2, 'as-needed', { requireForBlockBody: false }],
+    'no-async-promise-executor': 'off',
+    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true, argsIgnorePattern: '^_' }],
     'no-console': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'prefer-promise-reject-errors': 'off',
-    '@typescript-eslint/no-unused-vars': ['error'],
     'linebreak-style': 'off', // 回车换行风格
     'no-trailing-spaces': 1, // 禁用行尾空格
-    'no-param-reassign': 'off', // 禁止对函数参数再赋值
-    'import/prefer-default-export': 'off',
     'object-curly-newline': 'off', // 不强制花括号内换行
     'arrow-body-style': 'off', // 箭头函数不强制以用块体（用花括号表示）
     'import/named': 'off', // 停用 import/named 校验
-    'no-unused-expressions': 'off', // 禁止使用未使用的表达式
-    'max-len': ['error', { code: 120 }],
     'comma-dangle': ['error', 'never'], // 禁止末尾使用的逗号
-    'react/jsx-one-expression-per-line': 'off',
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': 'off',
     'import/extensions': [
       'error',
       'always',
@@ -124,37 +216,7 @@ module.exports = {
         allowForLoopAfterthoughts: true
       }
     ],
-    'import/no-cycle': 'off',
-    'no-underscore-dangle': 'off',
-    'import/order': 'off',
-    'prefer-object-spread': 'off',
-    'arrow-parens': [2, 'as-needed', { requireForBlockBody: false }],
-    'no-async-promise-executor': 'off',
-    quotes: ['error', 'single'], // 单引号
-    semi: ['error', 'always'], // 代码需要以分号结尾
-    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-use-before-define': 'off',
-    '@typescript-eslint/no-inferrable-types': 'off',
-    '@typescript-eslint/no-empty-interface': 'off',
-    '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/member-delimiter-style': [
-      'error',
-      {
-        multiline: {
-          delimiter: 'semi',
-          requireLast: true
-        },
-        singleline: {
-          delimiter: 'semi',
-          requireLast: true
-        }
-      }
-    ]
+    camelcase: 'off'
   }
 };
 
@@ -418,5 +480,39 @@ yarn add lint-staged -D
     ]
   }
 }
+```
+
+# 配置别名
+
+```json
+// vite.config.ts
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      '~@': path.resolve(__dirname, '/src')
+    }
+  },
+  server: {
+    host: '0.0.0.0'
+  }
+});
+// tsconfig.json
+{
+    ...
+  "baseUrl": "./",
+  "paths": {
+    "@/*": ["src/*"]
+  },
+}
+
+```
+
+# 需要依赖包
+
+``` bash
+npm install -D eslint-plugin-prettier prettier-eslint @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-airbnb eslint-import-
+resolver-alias eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-simple-import-sort husky lint-staged prettier stylelint stylelint-config-prettier stylelint-order
 ```
 
