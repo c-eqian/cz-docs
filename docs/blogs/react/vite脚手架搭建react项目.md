@@ -18,9 +18,9 @@ tags:
 yarn create vite
 ```
 
-![image-20230212135922609](https://c-typora.oss-cn-guangzhou.aliyuncs.com/c-typora/image-20230212135922609.png)
+![](https://c-typora.oss-cn-guangzhou.aliyuncs.com/c-typora/image-20230212135922609.png)
 
-![image-20230212140211367](./vite%E8%84%9A%E6%89%8B%E6%9E%B6%E6%90%AD%E5%BB%BAreact%E9%A1%B9%E7%9B%AE.assets/image-20230212140211367.png)
+![](https://c-typora.oss-cn-guangzhou.aliyuncs.com/c-typora/image-20230212140211367.png)
 
 # 代码规范
 
@@ -28,7 +28,7 @@ yarn create vite
 npx eslint --init
 ```
 
-![image-20230212140925069](./vite%E8%84%9A%E6%89%8B%E6%9E%B6%E6%90%AD%E5%BB%BAreact%E9%A1%B9%E7%9B%AE.assets/image-20230212140925069.png)
+![](https://c-typora.oss-cn-guangzhou.aliyuncs.com/c-typora/image-20230212135922609.png)
 
 ```json
   "scripts": {
