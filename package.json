@@ -22,7 +22,6 @@
   },
   "description": "cz-文档",
   "dependencies": {
-    "co-utils-vue": "^1.2.0",
     "vuepress-plugin-code-copy": "^1.0.6"
   }
 }
