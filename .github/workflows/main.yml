@@ -14,7 +14,6 @@ jobs:
       - name: Checkout
         uses : actions/setup-node@v2
         with:
-          persist-credentials: false
           node-version : '16'
 
       - name: Build
