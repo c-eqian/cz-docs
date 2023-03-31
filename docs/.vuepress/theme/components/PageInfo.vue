@@ -39,7 +39,7 @@
 import { defineComponent } from 'vue'
 import { RecoIcon } from '@vuepress-reco/core/lib/components'
 import { useInstance } from '@theme/helpers/composable'
-import { beforeDate, formatDate } from 'co-utils';
+import { beforeDate, formatDate } from 'co-utils-vue';
 export default defineComponent({
   components: { RecoIcon },
   props: {

@@ -10,7 +10,6 @@
     "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "@vuepress/plugin-pwa": "^1.9.7",
-    "co-utils": "^1.1.7",
     "moment": "^2.29.4",
     "vuepress": "1.9.7",
     "vuepress-plugin-boxx": "0.0.7",
@@ -23,6 +22,7 @@
   },
   "description": "cz-文档",
   "dependencies": {
+    "co-utils-vue": "^1.2.0",
     "vuepress-plugin-code-copy": "^1.0.6"
   }
 }
