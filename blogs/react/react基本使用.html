@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>react基本使用 | 秋谨~</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="https://s3.uuu.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg">
+    <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/cz-docs/js/MouseClickEffect.js"></script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/cz-docs/assets/css/0.styles.37a7060c.css" as="style"><link rel="preload" href="/cz-docs/assets/js/app.bec10bf3.js" as="script"><link rel="preload" href="/cz-docs/assets/js/4.264abce6.js" as="script"><link rel="preload" href="/cz-docs/assets/js/1.b4e5d39f.js" as="script"><link rel="preload" href="/cz-docs/assets/js/27.2eb70bbe.js" as="script"><link rel="preload" href="/cz-docs/assets/js/11.6fbb063a.js" as="script"><link rel="prefetch" href="/cz-docs/assets/js/10.9947e4a3.js"><link rel="prefetch" href="/cz-docs/assets/js/12.9ec29329.js"><link rel="prefetch" href="/cz-docs/assets/js/13.9e710103.js"><link rel="prefetch" href="/cz-docs/assets/js/14.3c791975.js"><link rel="prefetch" href="/cz-docs/assets/js/15.c3c2618f.js"><link rel="prefetch" href="/cz-docs/assets/js/16.0bca6d39.js"><link rel="prefetch" href="/cz-docs/assets/js/17.e0bb5fce.js"><link rel="prefetch" href="/cz-docs/assets/js/18.ccbca4fb.js"><link rel="prefetch" href="/cz-docs/assets/js/19.e2fe5df4.js"><link rel="prefetch" href="/cz-docs/assets/js/2.45f405fe.js"><link rel="prefetch" href="/cz-docs/assets/js/20.d9036cfd.js"><link rel="prefetch" href="/cz-docs/assets/js/21.e9713553.js"><link rel="prefetch" href="/cz-docs/assets/js/22.cf09be40.js"><link rel="prefetch" href="/cz-docs/assets/js/23.4db79c33.js"><link rel="prefetch" href="/cz-docs/assets/js/24.4066be78.js"><link rel="prefetch" href="/cz-docs/assets/js/25.4237eeb2.js"><link rel="prefetch" href="/cz-docs/assets/js/26.86d065a5.js"><link rel="prefetch" href="/cz-docs/assets/js/28.754a51c8.js"><link rel="prefetch" href="/cz-docs/assets/js/29.293ebd96.js"><link rel="prefetch" href="/cz-docs/assets/js/30.783f317b.js"><link rel="prefetch" href="/cz-docs/assets/js/31.4aea6775.js"><link rel="prefetch" href="/cz-docs/assets/js/32.8e5cb280.js"><link rel="prefetch" href="/cz-docs/assets/js/33.ab89e187.js"><link rel="prefetch" href="/cz-docs/assets/js/34.885249a8.js"><link rel="prefetch" href="/cz-docs/assets/js/5.7e3fe4c4.js"><link rel="prefetch" href="/cz-docs/assets/js/6.4f67065d.js"><link rel="prefetch" href="/cz-docs/assets/js/7.b59711ca.js"><link rel="prefetch" href="/cz-docs/assets/js/8.1818d1f4.js"><link rel="prefetch" href="/cz-docs/assets/js/9.8f0127d3.js">
+    <link rel="stylesheet" href="/cz-docs/assets/css/0.styles.37a7060c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-58d791b2><div data-v-58d791b2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-08f61db9 data-v-58d791b2 data-v-58d791b2><h3 class="title" data-v-08f61db9>秋谨~</h3> <p class="description" data-v-08f61db9></p> <label id="box" class="inputBox" data-v-08f61db9><input type="password" value="" data-v-08f61db9> <span data-v-08f61db9>Konck! Knock!</span> <button data-v-08f61db9>OK</button></label> <div class="footer" data-v-08f61db9><span data-v-08f61db9><i class="iconfont reco-theme" data-v-08f61db9></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-08f61db9>vuePress-theme-reco</a></span> <span data-v-08f61db9><i class="iconfont reco-copyright" data-v-08f61db9></i> <a data-v-08f61db9><span data-v-08f61db9>秋谨</span>
+          
+        <span data-v-08f61db9>2022 - </span>
+        2023
+      </a></span></div></div> <div class="hide" data-v-58d791b2><header class="navbar" data-v-58d791b2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/cz-docs/" class="home-link router-link-active"><img src="https://s3.bmp.ovh/imgs/2022/12/21/0aedf538ece60a2f.png" alt="秋谨~" class="logo"> <span class="site-name">秋谨~</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/cz-docs/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cz-docs/docs/utils/" class="nav-link"><i class="undefined"></i>
+  co-utils工具库
+</a></li><li class="dropdown-item"><!----> <a href="https://c1320.github.io/co-utils" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  co-utils最新版本
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/cz-docs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cz-docs/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/SQL/" class="nav-link"><i class="undefined"></i>
+  SQL
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li></ul></div></div><div class="nav-item"><a href="/cz-docs/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-58d791b2></div> <aside class="sidebar" data-v-58d791b2><div class="personal-info-wrapper" data-v-dd0a4f6c data-v-58d791b2><img src="https://s3.bmp.ovh/imgs/2022/11/23/f0fcebdd69e0360a.jpeg" alt="author-avatar" class="personal-img" data-v-dd0a4f6c> <h3 class="name" data-v-dd0a4f6c>
+    秋谨
+  </h3> <div class="num" data-v-dd0a4f6c><div data-v-dd0a4f6c><h3 data-v-dd0a4f6c>21</h3> <h6 data-v-dd0a4f6c>文章</h6></div> <div data-v-dd0a4f6c><h3 data-v-dd0a4f6c>22</h3> <h6 data-v-dd0a4f6c>标签</h6></div></div> <ul class="social-links" data-v-dd0a4f6c></ul> <hr data-v-dd0a4f6c></div> <nav class="nav-links"><div class="nav-item"><a href="/cz-docs/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cz-docs/docs/utils/" class="nav-link"><i class="undefined"></i>
+  co-utils工具库
+</a></li><li class="dropdown-item"><!----> <a href="https://c1320.github.io/co-utils" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  co-utils最新版本
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/cz-docs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cz-docs/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/SQL/" class="nav-link"><i class="undefined"></i>
+  SQL
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/cz-docs/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li></ul></div></div><div class="nav-item"><a href="/cz-docs/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-08f61db9 data-v-58d791b2><h3 class="title" data-v-08f61db9>react基本使用</h3> <!----> <label id="box" class="inputBox" data-v-08f61db9><input type="password" value="" data-v-08f61db9> <span data-v-08f61db9>Konck! Knock!</span> <button data-v-08f61db9>OK</button></label> <div class="footer" data-v-08f61db9><span data-v-08f61db9><i class="iconfont reco-theme" data-v-08f61db9></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-08f61db9>vuePress-theme-reco</a></span> <span data-v-08f61db9><i class="iconfont reco-copyright" data-v-08f61db9></i> <a data-v-08f61db9><span data-v-08f61db9>秋谨</span>
+          
+        <span data-v-08f61db9>2022 - </span>
+        2023
+      </a></span></div></div> <div data-v-58d791b2><div data-v-58d791b2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">react基本使用</h1> <div data-v-ea9cd536><i class="iconfont reco-account" data-v-ea9cd536><span data-v-ea9cd536>秋谨</span></i> <i class="iconfont reco-date" data-v-ea9cd536><span data-v-ea9cd536>1个月前</span></i> <!----> <i class="tags iconfont reco-tag" data-v-ea9cd536><span class="tag-item" data-v-ea9cd536>react</span><span class="tag-item" data-v-ea9cd536>typescript</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="函数组件与-class-组件"><a href="#函数组件与-class-组件" class="header-anchor">#</a> 函数组件与 class 组件</h2> <p>定义组件最简单的方式就是编写 <code>JavaScript</code> 函数：</p> <p>该函数是一个有效的 React 组件，因为它接收唯一带有数据的 “props”（代表属性）对象与并返回一个 React 元素。这类组件被称为“函数组件”，因为它本质上就是 JavaScript 函数。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="props-的只读性"><a href="#props-的只读性" class="header-anchor">#</a> Props 的只读性</h2> <p>组件无论是使用<a href="https://react.docschina.org/docs/components-and-props.html#function-and-class-components" target="_blank" rel="noopener noreferrer">函数声明还是通过 class 声明<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，都决不能修改自身的 props。</p> <h2 id="state-生命周期"><a href="#state-生命周期" class="header-anchor">#</a> State &amp; 生命周期</h2> <div class="language-react line-numbers-mode"><pre class="language-text"><code>export class Clock extends React.Component&lt;&gt; {
+  constructor(props: any) {
+    super(props);
+    this.state = { date: new Date() };
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+        &lt;h2&gt;It is {this.state.date.toLocaleTimeString()}.&lt;/h2&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>在<code>eslint</code>中使用解决<code>TS2339: Property 'date' does not exist on type 'Readonly{}&gt;'.</code></p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React from 'react';
+
+// 定义类型接口
+interface IState {
+  date: Date
+}
+
+/**
+ * 第一个参数类型，是为了让父组件在传参得时候能够具备类型提示
+ * 第二个类型参数，是为了让state具备类型提示
+ */
+export class Clock extends React.Component&lt;IState, IState&gt; {
+  constructor(props: IState) {
+    super(props);
+    this.state = { date: new Date() };
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+        &lt;h2&gt;It is {this.state.date.toLocaleTimeString()}.&lt;/h2&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p><img src="https://c-typora.oss-cn-guangzhou.aliyuncs.com/c-typora/image-20230214123733781.png" alt="image-20230214123733781"></p> <h2 id="将函数组件转换成-class-组件"><a href="#将函数组件转换成-class-组件" class="header-anchor">#</a> 将函数组件转换成 class 组件</h2> <p>通过以下五步将 <code>Clock</code> 的函数组件转成 class 组件：</p> <ol><li>创建一个同名的 <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes" target="_blank" rel="noopener noreferrer">ES6 class<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，并且继承于 <code>React.Component</code>。</li> <li>添加一个空的 <code>render()</code> 方法。</li> <li>将函数体移动到 <code>render()</code> 方法之中。</li> <li>在 <code>render()</code> 方法中使用 <code>this.props</code> 替换 <code>props</code>。</li> <li>删除剩余的空函数声明。</li></ol> <h2 id="class添加全局state"><a href="#class添加全局state" class="header-anchor">#</a> <code>class</code>添加全局<code>state</code></h2> <p>我们通过以下三步将 <code>date</code> 从 props 移动到 state 中：</p> <ul><li>把 <code>render()</code> 方法中的 <code>this.props.date</code> 替换成 <code>this.state.date</code> ：</li></ul> <div class="language-react line-numbers-mode"><pre class="language-text"><code>export class Clock extends React.Component&lt;any, IState&gt; {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+        &lt;h2&gt;It is {this.state.date.toLocaleTimeString()}.&lt;/h2&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>添加一个 <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes#Constructor" target="_blank" rel="noopener noreferrer">class 构造函数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，然后在该函数中为 <code>this.state</code> 赋初值：</li></ul> <div class="language-react line-numbers-mode"><pre class="language-text"><code>export class Clock extends React.Component&lt;IState, IState&gt; {
+  constructor(props: IState) {
+    super(props);
+    this.state = { date: new Date() };
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+        &lt;h2&gt;It is {this.state.date.toLocaleTimeString()}.&lt;/h2&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="class-中添加生命周期方法"><a href="#class-中添加生命周期方法" class="header-anchor">#</a> Class 中添加生命周期方法</h2> <ul><li><p>在具有许多组件的应用程序中，当组件被销毁时释放所占用的资源是非常重要的。</p></li> <li><p>当 <code>Clock</code> 组件第一次被渲染到 DOM 中的时候，就为其<a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval" target="_blank" rel="noopener noreferrer">设置一个计时器<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。这在 React 中被称为“挂载（mount）”。</p></li> <li><p>同时，当 DOM 中 <code>Clock</code> 组件被删除的时候，应该<a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval" target="_blank" rel="noopener noreferrer">清除计时器<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。这在 React 中被称为“卸载（unmount）”。</p></li> <li><p>我们可以为 class 组件声明一些特殊的方法，当组件挂载或卸载时就会去执行这些方法：</p></li></ul> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React from 'react';
+
+// 定义类型接口
+interface IState {
+  date: Date
+}
+
+/**
+ * 第一个参数类型，是为了让父组件在传参得时候能够具备类型提示
+ * 第二个类型参数，是为了让state具备类型提示
+ */
+export class Clock extends React.Component&lt;IState, IState&gt; {
+  constructor(props: IState) {
+    super(props);
+    this.state = { date: new Date() };
+  }
+
+  // 组件已经被渲染到 DOM 中后运行
+  componentDidMount() {
+    console.log('组件已经被渲染到 DOM 中后运行');
+  }
+
+  //  组件从 DOM 中被移除，React 就会调用 componentWillUnmount() 生命周期方法
+  componentWillUnmount() {
+    console.log('组件从 DOM 中被移除');
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+        &lt;h2&gt;It is {this.state.date.toLocaleTimeString()}.&lt;/h2&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h2 id="class中事件处理this问题"><a href="#class中事件处理this问题" class="header-anchor">#</a> <code>class</code>中事件处理<code>this</code>问题</h2> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React from 'react';
+
+// 定义类型接口
+interface IState {
+  count: number
+}
+
+/**
+ * 第一个参数类型，是为了让父组件在传参得时候能够具备类型提示
+ * 第二个类型参数，是为了让state具备类型提示
+ */
+export class Clock extends React.Component&lt;IState, IState&gt; {
+  constructor(props: IState) {
+    super(props);
+    // 需要初始化state,否则会出现报错
+    this.state = { ...this.props };
+    // 为了在回调中使用 `this`，这个绑定是必不可少的
+    // this.addNo = this.addNo.bind(this);
+  }
+
+  // 注意需要使用箭头函数，否则会出现提示setState报错
+  // 此语法确保 `add` 内的 `this` 已被绑定。
+  // 注意: 这是 *实验性* 语法。
+  add = () =&gt; {
+    this.setState(state =&gt; ({
+      count: state.count + 1
+    }));
+  };
+// 或者在构造函数中进行this绑定
+// 或者在事件监听中进行this传递
+  addNo() {
+    this.setState({
+      count: this.state.count + 1
+    });
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;{this.state?.count}&lt;/h1&gt;
+        &lt;button onClick={this.addNo.bind(this)}&gt;点我&lt;/button&gt;
+            &lt;-- 两者等价&gt;&lt;/--&gt;
+        &lt;button onClick={this.addNo}&gt;点我&lt;/button&gt;
+        &lt;button onClick={this.add}&gt;点我改变&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br></div></div><h2 id="受控组件"><a href="#受控组件" class="header-anchor">#</a> 受控组件</h2> <p>在 HTML 中，表单元素（如<code>&lt;input&gt;</code>、 <code>&lt;textarea&gt;</code> 和 <code>&lt;select&gt;</code>）之类的表单元素通常自己维护 state，并根据用户输入进行更新。而在 React 中，可变状态（mutable state）通常保存在组件的 state 属性中，并且只能通过使用 <a href="https://react.docschina.org/docs/react-component.html#setstate" target="_blank" rel="noopener noreferrer"><code>setState()</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>来更新。</p> <p>我们可以把两者结合起来，使 React 的 state 成为“唯一数据源”。渲染表单的 React 组件还控制着用户输入过程中表单发生的操作。<strong>被 React 以这种方式控制取值的表单输入元素就叫做“受控组件”。</strong></p> <h2 id="hooks使用"><a href="#hooks使用" class="header-anchor">#</a> hooks使用</h2> <p><strong>Hook 不能在 class 组件中使用</strong></p> <h3 id="usestate"><a href="#usestate" class="header-anchor">#</a> useState</h3> <p><code>useState</code> 会返回一对值：<strong>当前</strong>状态和一个让你更新它的函数，你可以在事件处理函数中或其他一些地方调用这个函数。它类似 class 组件的 <code>this.setState</code>，但是它不会把新的 state 和旧的 state 进行合并。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>// 注意首字母必须大写
+export const UseStateHook = () =&gt; {
+  const [count, setCount] = useState(0);
+  const [colors, setColors] = useState({
+    color: 'red'
+  });
+  const add = () =&gt; {
+    setCount(count + 1);
+  };
+  const handleChangeColor = () =&gt; {
+    setColors({
+      color: 'green'
+    });
+  };
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;{count}&lt;/h1&gt;
+      &lt;h1&gt;{colors.color}&lt;/h1&gt;
+      &lt;button onClick={add}&gt;测试&lt;/button&gt;
+      &lt;button onClick={handleChangeColor}&gt;颜色切换&lt;/button&gt;
+    &lt;/div&gt;
+  );
+};
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p><img src="https://c-typora.oss-cn-guangzhou.aliyuncs.com/c-typora/image-20230214155124297.png" alt=""></p> <h3 id="useeffect"><a href="#useeffect" class="header-anchor">#</a> useEffect</h3> <p><code>useEffect</code> 就是一个 Effect Hook，给函数组件增加了操作副作用的能力。它跟 class 组件中的 <code>componentDidMount</code>、<code>componentDidUpdate</code> 和 <code>componentWillUnmount</code> 具有相同的用途，只不过被合并成了一个 API。</p> <p>当你调用 <code>useEffect</code> 时，就是在告诉 React 在完成对 DOM 的更改后运行你的“副作用”函数。由于副作用函数是在组件内声明的，所以它们可以访问到组件的 props 和 state。默认情况下，React 会在每次渲染后调用副作用函数 —— <strong>包括</strong>第一次渲染的时候。</p> <p>跟 <code>useState</code> 一样，你可以在组件中多次使用 <code>useEffect</code></p> <p>下面这个组件在 React 更新 DOM 后会设置一个页面标题：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>export const UseEffectHook = () =&gt; {
+  // 相当于 componentDidMount 和 componentDidUpdate:
+  useEffect(() =&gt; {
+    document.title = 'react 啊~';
+  });
+  return (
+    &lt;div /&gt;
+  );
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="https://c-typora.oss-cn-guangzhou.aliyuncs.com/c-typora/image-20230214155719770.png" alt="image-20230214155719770"></p> <h3 id="usecontext"><a href="#usecontext" class="header-anchor">#</a> useContext</h3> <ul><li><p>接收一个 context 对象（<code>React.createContext</code> 的返回值）并返回该 context 的当前值。当前的 context 值由上层组件中距离当前组件最近的 <code>&lt;MyContext.Provider&gt;</code> 的 <code>value</code> prop 决定。</p></li> <li><p>当组件上层最近的 <code>&lt;MyContext.Provider&gt;</code> 更新时，该 Hook 会触发重渲染，并使用最新传递给 <code>MyContext</code> provider 的 context <code>value</code> 值。即使祖先使用 <a href="https://react.docschina.org/docs/react-api.html#reactmemo" target="_blank" rel="noopener noreferrer"><code>React.memo</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 或 <a href="https://react.docschina.org/docs/react-component.html#shouldcomponentupdate" target="_blank" rel="noopener noreferrer"><code>shouldComponentUpdate</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，也会在组件本身使用 <code>useContext</code> 时重新渲染。</p></li> <li><p><code>useContext(MyContext)</code> 相当于 class 组件中的 <code>static contextType = MyContext</code> 或者 <code>&lt;MyContext.Consumer&gt;</code>。</p></li> <li><p><code>useContext(MyContext)</code> 只是让你能够<em>读取</em> context 的值以及订阅 context 的变化。你仍然需要在上层组件树中使用 <code>&lt;MyContext.Provider&gt;</code> 来为下层组件<em>提供</em> context。</p></li></ul> <h2 id="hook-使用规则"><a href="#hook-使用规则" class="header-anchor">#</a> Hook 使用规则</h2> <p><code>Hook</code> 就是 <code>JavaScript</code> 函数，但是使用它们会有两个额外的规则：</p> <ul><li>只能在<strong>函数最外层</strong>调用 <code>Hook</code>。不要在循环、条件判断或者子函数中调用。</li> <li>只能在 <strong>React 的函数组件</strong>中调用 <code>Hook</code>。不要在其他 <code>JavaScript</code>函数中调用。</li> <li>或者在自定义<code>Hook</code>时可以调用</li></ul></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">2023-03-31, 14:10:59</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-6ea58682 data-v-58d791b2><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#函数组件与-class-组件" class="sidebar-link reco-side-函数组件与-class-组件" data-v-6ea58682>函数组件与 class 组件</a></li><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#props-的只读性" class="sidebar-link reco-side-props-的只读性" data-v-6ea58682>Props 的只读性</a></li><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#state-生命周期" class="sidebar-link reco-side-state-生命周期" data-v-6ea58682>State &amp; 生命周期</a></li><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#将函数组件转换成-class-组件" class="sidebar-link reco-side-将函数组件转换成-class-组件" data-v-6ea58682>将函数组件转换成 class 组件</a></li><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#class添加全局state" class="sidebar-link reco-side-class添加全局state" data-v-6ea58682>class添加全局state</a></li><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#class-中添加生命周期方法" class="sidebar-link reco-side-class-中添加生命周期方法" data-v-6ea58682>Class 中添加生命周期方法</a></li><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#class中事件处理this问题" class="sidebar-link reco-side-class中事件处理this问题" data-v-6ea58682>class中事件处理this问题</a></li><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#受控组件" class="sidebar-link reco-side-受控组件" data-v-6ea58682>受控组件</a></li><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#hooks使用" class="sidebar-link reco-side-hooks使用" data-v-6ea58682>hooks使用</a></li><li class="level-3" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#usestate" class="sidebar-link reco-side-usestate" data-v-6ea58682>useState</a></li><li class="level-3" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#useeffect" class="sidebar-link reco-side-useeffect" data-v-6ea58682>useEffect</a></li><li class="level-3" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#usecontext" class="sidebar-link reco-side-usecontext" data-v-6ea58682>useContext</a></li><li class="level-2" data-v-6ea58682><a href="/cz-docs/blogs/react/react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html#hook-使用规则" class="sidebar-link reco-side-hook-使用规则" data-v-6ea58682>Hook 使用规则</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><canvas id="vuepress-canvas-cursor"></canvas><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是lookroot欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="240" height="352" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><!----><div></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="http://music.163.com/song/media/outer/url?id=518291899.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p1.music.126.net/AKhQSRL6HyZu4YwWg4Wi6A==/109951163060585255.jpg?param=130y130" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p1.music.126.net/AKhQSRL6HyZu4YwWg4Wi6A==/109951163060585255.jpg?param=130y130);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>飞舞吧，樱花！</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>余日秋山</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div></div></div>
+    <script src="/cz-docs/assets/js/app.bec10bf3.js" defer></script><script src="/cz-docs/assets/js/4.264abce6.js" defer></script><script src="/cz-docs/assets/js/1.b4e5d39f.js" defer></script><script src="/cz-docs/assets/js/27.2eb70bbe.js" defer></script><script src="/cz-docs/assets/js/11.6fbb063a.js" defer></script>
+  </body>
+</html>
