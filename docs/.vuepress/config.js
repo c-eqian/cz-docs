@@ -72,7 +72,7 @@ module.exports = {
         icon: 'reco-document',
         items: [
           {
-            text: 'co-utils-vue工具库',
+            text: 'co-utils工具库',
             link: '/docs/utils/',
           },
           {
@@ -93,7 +93,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      '/docs/utils/': ['co-utils-vue工具库', 'co-utils-vue工具库v2'],
+      '/docs/utils/': ['co-utils工具库', 'co-utils工具库v2'],
     },
     type: 'blog',
     blogConfig: {
