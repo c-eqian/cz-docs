@@ -11,7 +11,7 @@ categories:
 
 <Boxx/>
 
-# 1.安装 
+# 1.安装
 
 ```shell
 yum install java-11-openjdk* -y
@@ -151,3 +151,6 @@ npm run build:prod
 ![image-20230330151955822](https://c-typora.oss-cn-guangzhou.aliyuncs.com/c-typora/image-20230330151955822.png)
 
 **此时可以愉快地梭哈了！！！！**
+
+[TOC]
+

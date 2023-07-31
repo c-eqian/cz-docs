@@ -72,12 +72,12 @@ module.exports = {
         icon: 'reco-document',
         items: [
           {
-            text: 'co-utils工具库',
+            text: 'co-utils-vue工具库',
             link: '/docs/utils/',
           },
           {
-            text: 'co-utils最新版本',
-            link: 'https://c1320.github.io/co-utils',
+            text: 'co-utils-vue最新版本',
+            link: 'https://c1320.github.io/co-utils-vue',
           },
         ],
       },
@@ -86,9 +86,14 @@ module.exports = {
         link: '/timeline/',
         icon: 'reco-date',
       },
+      {
+        text: '网站',
+        link: 'http://120.79.196.162:13209/',
+        icon: 'reco-date',
+      },
     ],
     sidebar: {
-      '/docs/utils/': ['co-utils工具库', 'co-utils工具库v2'],
+      '/docs/utils/': ['co-utils-vue工具库', 'co-utils-vue工具库v2'],
     },
     type: 'blog',
     blogConfig: {
