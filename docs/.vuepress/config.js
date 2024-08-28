@@ -72,12 +72,8 @@ module.exports = {
         icon: 'reco-document',
         items: [
           {
-            text: 'co-utils工具库',
-            link: '/docs/utils/',
-          },
-          {
-            text: 'co-utils-vue最新版本',
-            link: 'https://c1320.github.io/co-utils-vue',
+            text: '@eqian/utils-vue工具库',
+            link: 'https://c-eqian.github.io/co-utils-vue/',
           },
         ],
       },
@@ -87,13 +83,13 @@ module.exports = {
         icon: 'reco-date',
       },
       {
-        text: '网站',
-        link: 'http://120.79.196.162:13209/',
+        text: '个人网站',
+        link: 'https://www.eqian.site/',
         icon: 'reco-date',
       },
     ],
     sidebar: {
-      '/docs/utils/': ['co-utils工具库', 'co-utils工具库v2'],
+      '/docs/utils/': ['@eqian/utils-vue工具库'],
     },
     type: 'blog',
     blogConfig: {
@@ -228,5 +224,23 @@ module.exports = {
         ],
       },
     ],
+    ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
+      width: '300px', // 默认 260px
+      title: '通知',
+      body: [
+        {
+          type: 'title',
+          content: '该博客网站已经不再维护，可能会有少量文章内容同步过来，请迁移至新网站！',
+          style: 'text-aligin: center;font-size: 22px'
+        },
+      ],
+      footer: [
+        {
+          type: 'button',
+          text: '起飞',
+          link: 'https://eqian.site'
+        }
+      ]
+    }]
   ],
 }
