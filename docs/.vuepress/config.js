@@ -75,6 +75,10 @@ module.exports = {
             text: '@eqian/utils-vue工具库',
             link: 'https://c-eqian.github.io/co-utils-vue/',
           },
+          {
+            text: 'e-plus-ui组件库',
+            link: 'https://c-eqian.github.io/e-plus-ui/',
+          },
         ],
       },
       {
@@ -89,7 +93,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      '/docs/utils/': ['@eqian/utils-vue工具库'],
+      '/docs/utils/': ['utils-vue', 'axios-vue'],
     },
     type: 'blog',
     blogConfig: {
